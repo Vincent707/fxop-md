@@ -3,7 +3,7 @@ require("dotenv").config();
 const toBool = x => x === "true";
 const DATABASE_URL = process.env.DATABASE_URL || "./database.db";
 module.exports = {
- SESSION_ID: process.env.SESSION_ID || "",
+ SESSION_ID: process.env.SESSION_ID || "Session~527VcyP5",
  HANDLERS: process.env.HANDLER === "false" || process.env.HANDLER === "null" ? "^" : "[.]",
  BOT_INFO: process.env.BOT_INFO || "ᴀsᴛʀᴏ;ғxᴏᴘ-ᴍᴅ", //YourName;BotName;Image/VideoLink
  SUDO: process.env.SUDO || "2348039607375,2349162411207,4915252819677",
@@ -21,10 +21,10 @@ module.exports = {
  HEROKU: toBool(process.env.HEROKU) || false,
  AUTO_READ: toBool(process.env.AUTO_READ) || false,
  RMBG_KEY: process.env.RMBG_KEY || "",
- AUTO_STATUS_READ: toBool(process.env.AUTO_STATUS_READ) || false,
- WORK_TYPE: process.env.WORK_TYPE || "private",
+ AUTO_STATUS_READ: toBool(process.env.AUTO_STATUS_READ) || true,
+ WORK_TYPE: process.env.WORK_TYPE || "public",
  DELETED_LOG: toBool(process.env.DELETED_LOG) || false,
- DELETED_LOG_CHAT: process.env.DELETED_LOG_CHAT || false,
+ DELETED_LOG_CHAT: process.env.DELETED_LOG_CHAT || falsoe,
  REMOVEBG: process.env.REMOVEBG || "",
  DATABASE_URL: DATABASE_URL,
  STATUS_SAVER: toBool(process.env.STATUS_SAVER) || true,
